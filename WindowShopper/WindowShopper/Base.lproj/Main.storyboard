@@ -37,7 +37,16 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IO2-uE-k5V" customClass="CurrenyTxtField" customModule="WindowShopper" customModuleProvider="target">
+                                <rect key="frame" x="5" y="215" width="310" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ezi-Q0-54i"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,17 +56,24 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xqd-gh-Ovw" secondAttribute="trailing" constant="5" id="ITf-md-Kvk"/>
                             <constraint firstItem="Xqd-gh-Ovw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="MUb-Fz-nFH"/>
                             <constraint firstItem="Xqd-gh-Ovw" firstAttribute="top" secondItem="RKR-eL-Ceb" secondAttribute="bottom" constant="35" id="MZj-VY-mcJ"/>
+                            <constraint firstItem="IO2-uE-k5V" firstAttribute="leading" secondItem="Xqd-gh-Ovw" secondAttribute="leading" id="Ndu-qX-NYn"/>
                             <constraint firstItem="RKR-eL-Ceb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TKW-mf-5Jj"/>
+                            <constraint firstItem="IO2-uE-k5V" firstAttribute="top" secondItem="Xqd-gh-Ovw" secondAttribute="bottom" constant="40" id="Y6Q-W8-c7U"/>
                             <constraint firstItem="RKR-eL-Ceb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eFI-dH-tt1"/>
                             <constraint firstItem="3OI-ez-5CZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mCV-JN-8ul"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3OI-ez-5CZ" secondAttribute="trailing" id="oUP-LM-5FZ"/>
+                            <constraint firstItem="IO2-uE-k5V" firstAttribute="trailing" secondItem="Xqd-gh-Ovw" secondAttribute="trailing" id="sYA-St-B1s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="IO2-uE-k5V" id="veZ-nh-aba"/>
+                        <outlet property="wageTxt" destination="Xqd-gh-Ovw" id="fKr-nJ-PI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="130.98591549295776"/>
+            <point key="canvasLocation" x="493" y="193"/>
         </scene>
     </scenes>
     <resources>
