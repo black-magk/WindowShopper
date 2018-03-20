@@ -14,6 +14,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var hoursLbl: UILabel!
     @IBOutlet weak var resultLbl: UILabel!
     
+
     
     
     override func viewDidLoad() {
